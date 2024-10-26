@@ -1,5 +1,11 @@
 ## Running Server and Client Applications:
 
+### *Codebase Setup:
+
+Ensure that there is a **'public_html'** directory at the home-directory, as this helps the RMI communication protocol to find the code-to-download when needed.
+Moreover, for this application, we create a **'classes'** subdirectory that contains: **compute.jar** & **Pi.class**; i.e. .class files for the same.
+
+
 ### 1. First of all, start the RMI registry using the following command:
 
 "rmiregistry &", where **'&'** is for running the process in **background**
