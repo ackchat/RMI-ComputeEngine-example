@@ -1,0 +1,4 @@
+grant codeBase "file:/Users/ackchatomar239/Desktop/CS/FALL_2024/CS_485/PAs/RMI_Practice/ComputeEngine/computeServer/src/main/java/" {
+    permission java.net.SocketPermission "mycomputer.example.com", "connect,resolve";
+    permission java.security.AllPermission;
+};

@@ -1,0 +1,3 @@
+grant codebase "file:/Users/ackchatomar239/Desktop/CS/FALL_2024/CS_485/PAs/RMI_Practice/ComputeEngine/computeServer/src/main/java/" {
+    permission java.security.AllPermission;
+};
