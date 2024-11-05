@@ -22,6 +22,10 @@ public class cancelScheduledTask{
 			System.out.println("done once!");
 		}, 80, 50, TimeUnit.MILLISECONDS);
 
+		// log the task:
+		String name = "s";
+		cancelScheduledTask.log.put(name, new AtomicReference<>(future));
+
 		regular.submit(() -> {
 			try { 
 				Thread.sleep(1000);
@@ -55,9 +59,5 @@ public class cancelScheduledTask{
 			cancelScheduledTask.scheduled.shutdown();
 			cancelScheduledTask.regular.shutdown();
 		});
-		
-		// log the task:
-		String name = "s";
-		cancelScheduledTask.log.put(name, new AtomicReference<>(future));
 	}
 }
